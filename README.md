@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# metrics_webapp
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <h3><b>Metrics Webapp</b></h3>
+</div>
 
-## Available Scripts
+# 📗 Table of Contents
 
-In the project directory, you can run:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)  
+- [💻 Getting Started](#getting-started)
+  - [Install](#install)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-### `npm start`
+<!-- PROJECT DESCRIPTION -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 📖 [metrics_webapp] <a name="about-project"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**[metrics_webapp] This is a React capstone project that evolves around building a mobile web application which displays a list of metrics (numeric values) that will be created using React and Redux.
 
-### `npm test`
+## 🛠 Built With <a name="built-with"></a>
+- CSS
+- JAVASCRIPT
+- React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech Stack <a name="tech-stack"></a>
+Linters
+<details>
+  <summary>Linters</summary>
+  <summary>Client</summary>
+  <ul>
+    <li><a>REACT</a></li>
+    <li><a>CSS</a></li>
+    <li><a>JavaScript</a></li>
+  </ul>
+</details>
 
-### `npm run build`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Key Features <a name="key-features"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **No linter errors**
+- **Using of correct GitHub flow**
+- **Documenting in a professional way**
+- **Following best practices for Javascript and CSS**
+- **Creating Home and Details page**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run eject`
+## 🚀 Live Demo <a name="live-demo"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- To be added soon
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💻 Getting Started <a name="getting-started"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To get a local copy up and running, follow these steps.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In order to run this project you need:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Visual Studio Code**
+- **Git Bash**
 
-### Code Splitting
+### Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone this repository to your desired folder:
+- **cd your-folder**
+- **git clone https://github.com/aima98/metrics-webapp**
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- AUTHORS -->
 
-### Making a Progressive Web App
+## 👥 Authors <a name="authors"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+👤 **Oumaima Nejjari**
 
-### Advanced Configuration
+- GitHub: [@aima98](https://github.com/aima98)
+- LinkedIn: [Oumaima Nejjari](https://www.linkedin.com/in/oumaima-nejjari-375065171/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Deployment
+## 🔭 Credits <a name="future-features"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Project from [Microverse's](https://bit.ly/MicroverseTN) React and Redux
+- Api from [CoinCap](https://api.coincap.io/v2/assets)
+- Topic inspired by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 
-### `npm run build` fails to minify
+## 🔭 Future Features <a name="future-features"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Building more websites**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SHOW YOUR SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, give it a ⭐️ ! 
+Feel comfortable to endorse the author. You can contact the author via Twitter or Linkedin or directly message at oumanj1998@gmail.com.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank all of my Microverse mates and mentors for their support
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
