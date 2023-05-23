@@ -8,7 +8,7 @@ const initialState = {
 
 const FETCH_CRYPTOS = 'redux/FETCH_CRYPTOS';
 
-export const FetchCryptos = createAsyncThunk(
+export const getCryptos = createAsyncThunk(
   FETCH_CRYPTOS,
   async (thunkAPI) => {
     try {
@@ -24,22 +24,21 @@ const cryptoSlice = createSlice({
   name: 'cryptoReducer',
   initialState,
   reducers: {},
-  extraReducers: {
-
-    [FetchCryptos.pending]: (state) => {
+  extraReducers: (builder) => {
+    builder.addCase(getCryptos.pending, (state) => {
       state.status = 'loading';
-    },
+    });
 
-    [FetchCryptos.fulfilled]: (state, action) => {
+    builder.addCase(getCryptos.fulfilled, (state, action) => {
       state.status = 'success';
       state.cryptoItems = [
         ...state.cryptoItems, action.payload.data,
       ];
-    },
+    });
 
-    [FetchCryptos.rejected]: (state) => {
+    builder.addCase(getCryptos.rejected, (state) => {
       state.status = 'failure';
-    },
+    });
   },
 });
 

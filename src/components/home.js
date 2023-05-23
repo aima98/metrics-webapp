@@ -2,33 +2,33 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { FadeLoader } from 'react-spinners';
-import { FetchCryptos } from '../redux/slices/cryptoSlice';
+import { getCryptos } from '../redux/slices/cryptoSlice';
 
 function Home() {
-  const data = [];
+  const items = [];
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const fetch = useSelector((state) => state.cryptoReducer);
+  const fetchCr = useSelector((state) => state.cryptoReducer);
 
   const FormatNum = (num) => (Math.abs(num) > 999 ? `${Math.sign(num) * ((Math.abs(num) / 1000).toFixed(1))}k` : Math.sign(num) * Math.abs(num));
 
   useEffect(() => {
-    if (fetch.status === '') {
-      dispatch(FetchCryptos());
+    if (fetchCr.status === '') {
+      dispatch(getCryptos());
     }
-  }, [fetch.status, dispatch]);
+  }, [fetchCr.status, dispatch]);
 
-  if (fetch.status === 'success') {
-    data.push(fetch.cryptos[0]);
+  if (fetchCr.status === 'success') {
+    items.push(fetchCr.cryptoItems[0]);
   }
 
-  function handleClick(e) {
+  function handleClick(element) {
     navigate(
-      '/crypto-details',
+      `/crypto-details/${element.id}`,
       {
         state: {
-          cryptos: e,
+          cryptoItems: element,
         },
       },
     );
@@ -51,11 +51,11 @@ function Home() {
   if (search) {
     searchMsg.style.display = 'block';
 
-    data[0].map((i) => {
+    items[0].map((i) => {
       if (i.name.toLowerCase().includes(search.toLocaleLowerCase())) {
         searchRes.push(i);
       }
-      data[0] = searchRes;
+      items[0] = searchRes;
 
       if (searchRes.length > 0) {
         searchMsg.classList.add('success');
@@ -64,7 +64,7 @@ function Home() {
         searchMsg.classList.remove('success');
         searchMsg.classList.add('failure');
       }
-      return (data);
+      return (items);
     });
   }
 
@@ -75,9 +75,9 @@ function Home() {
         <div className="wrapper-content p-two">
           <h4 className="white left h-one">CYRPTO CURRENCIES</h4>
           <p className="white left">
-            {data[0] ? data[0].length : ''}
+            {items[0] ? items[0].length : ''}
             {' '}
-            Cyrptos
+            Cryptos
           </p>
         </div>
       </div>
@@ -94,7 +94,7 @@ function Home() {
         {!searchRes.length ? 'No Cyrptos Found.' : `${searchRes.length} Crypos Found.`}
       </p>
       <div className="crypto-details flex">
-        {data[0] ? data[0].map((i) => (
+        {items[0] ? items[0].map((i) => (
           <button key={i.id} onClick={() => handleClick(i)} type="button" className="details-container p-two">
             <i className="fa fa-arrow-circle-o-right" aria-hidden="true" />
             <div colSpan="2" className="crypto-name white">
