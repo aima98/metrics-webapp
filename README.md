@@ -58,7 +58,8 @@ Linters
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- To be added soon
+- Live Demo : https://cryptocurrency-webapp.onrender.com/
+- Presentation video : https://www.loom.com/share/82c70557e42d45f19669f18ec665b7a1
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
